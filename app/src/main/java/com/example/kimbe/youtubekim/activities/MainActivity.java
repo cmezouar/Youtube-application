@@ -32,12 +32,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String TAG = MainActivity.class.getName();
     private RecyclerView recyclerView;
     Results repos;
     private EditText search;
     private String wordsearch;
-    private boolean clicked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,9 +67,14 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onVideoClickListener(Item video) {
                                 String videoIDtext= video.getId().getVideoId();
+                                String description = video.getSnippet().getDescription();
+                                String title = video.getSnippet().getTitle();
                                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                                 intent.putExtra("ID_VIDEO", videoIDtext);
+                                intent.putExtra("DESC", description);
+                                intent.putExtra("TITLE", title);
                                 System.out.println("DNA SMAIN ACTIVITY VIDEOID "+videoIDtext);
+                                System.out.print("dessc "+description);
                                 startActivity(intent);
                             }
 
@@ -84,13 +87,13 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-        /*Retrofit.Builder builder = new Retrofit.Builder()
+        Retrofit.Builder builder = new Retrofit.Builder()
                 .baseUrl("https://www.googleapis.com/youtube/v3/")
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
         YoutubeClient client = retrofit.create(YoutubeClient.class);
-        Call<Results> callresult = client.getVideos("test");
+        Call<Results> callresult = client.getVideos(wordsearch);
 
         callresult.enqueue(new Callback<Results>() {
             @Override
@@ -101,9 +104,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onVideoClickListener(Item video) {
                         String videoIDtext= video.getId().getVideoId();
+                        String description = video.getSnippet().getDescription();
+                        String title = video.getSnippet().getTitle();
                         Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                         intent.putExtra("ID_VIDEO", videoIDtext);
-                        System.out.println("DNA SMAIN ACTIVITY VIDEOID "+videoIDtext);
+                        intent.putExtra("DESC", description);
+                        intent.putExtra("TITLE", title);
                         startActivity(intent);
                     }
 
@@ -113,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<Results> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "error : (", Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
     }
 
     private void initializeRecyclerView(){

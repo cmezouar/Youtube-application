@@ -12,6 +12,6 @@ import retrofit2.http.Query;
 
 public interface YoutubeClient {
 
-    @GET("search?part=snippet&&type=videos&key=AIzaSyBGPyg9-tN9skjfRYfduADiZhpUPdMolb4")
+    @GET("search?part=snippet&&type=videos&key=AIzaSyBGPyg9-tN9skjfRYfduADiZhpUPdMolb4&maxResults=45")
     Call<Results>  getVideos(@Query("q") String wordsearch);
 }

@@ -19,7 +19,8 @@ import org.w3c.dom.Text;
  */
 
 public class SecondActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    private TextView idvideo;
+    private TextView description;
+    private TextView title;
     public static final String API_KEY = "AIzaSyBGPyg9-tN9skjfRYfduADiZhpUPdMolb4";
     private static final int RECOVERY_DIALOG_REQUEST = 10;
     @Override
@@ -27,9 +28,10 @@ public class SecondActivity extends YouTubeBaseActivity implements YouTubePlayer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        //idvideo= findViewById(R.id.idvideo);
-        //idvideo.setText(getIntent().getStringExtra("ID_VIDEO"));
-        //System.out.println("DNAS SECOND ACT    "+idvideo.getText());
+        description= findViewById(R.id.description);
+        description.setText(getIntent().getStringExtra("DESC"));
+        title= findViewById(R.id.title2);
+        title.setText(getIntent().getStringExtra("TITLE"));
         YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(API_KEY, this);
 
@@ -39,6 +41,7 @@ public class SecondActivity extends YouTubeBaseActivity implements YouTubePlayer
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean wasRestored) {
         if (!wasRestored) {
             player.cueVideo(getIntent().getStringExtra("ID_VIDEO"));
+
         }
     }
 

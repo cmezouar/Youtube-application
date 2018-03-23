@@ -23,7 +23,6 @@ import static android.content.ContentValues.TAG;
 
 public class VideosViewHolder extends RecyclerView.ViewHolder{
     private TextView title;
-    //private TextView videoID;
     private ImageView imageyoutube;
     private String url;
 
@@ -31,13 +30,11 @@ public class VideosViewHolder extends RecyclerView.ViewHolder{
     public VideosViewHolder(View itemView){
         super(itemView);
         title = (TextView) itemView.findViewById(R.id.title);
-        //videoID = (TextView) itemView.findViewById(R.id.videoID);
         imageyoutube = (ImageView) itemView.findViewById(R.id.imageyoutube);
     }
 
     public void bind(final Item video, final search clicklistener) {
         title.setText(video.getSnippet().getTitle());
-        //videoID.setText(video.getId().getVideoId());
         url = video.getSnippet().getThumbnails().getHigh().getUrl();
         Picasso.get().load(url).into(imageyoutube);
         imageyoutube.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +43,5 @@ public class VideosViewHolder extends RecyclerView.ViewHolder{
                 clicklistener.onVideoClickListener(video);
             }
         });
-        //System.out.println(videoID.getText().toString());
     }
 }
