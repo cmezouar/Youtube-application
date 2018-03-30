@@ -1,4 +1,4 @@
-package com.example.kimbe.youtubekim;
+package com.example.kimbe.youtube;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.kimbe.youtubekim", appContext.getPackageName());
+        assertEquals("com.example.kimbe.youtube", appContext.getPackageName());
     }
 }

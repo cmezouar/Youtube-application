@@ -1,12 +1,12 @@
-package com.example.kimbe.youtubekim.adapters;
+package com.example.kimbe.youtube.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.example.kimbe.youtubekim.models.Item;
-import com.example.kimbe.youtubekim.viewholders.VideosViewHolder;
-import com.example.kimbe.youtubekim.R;
+import com.example.kimbe.youtube.models.Item;
+import com.example.kimbe.youtube.viewholders.VideosViewHolder;
+import com.example.kimbe.youtube.R;
 import java.util.List;
 
 /**

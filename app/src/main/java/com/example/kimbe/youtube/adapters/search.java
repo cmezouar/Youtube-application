@@ -1,6 +1,6 @@
-package com.example.kimbe.youtubekim.adapters;
+package com.example.kimbe.youtube.adapters;
 
-import com.example.kimbe.youtubekim.models.Item;
+import com.example.kimbe.youtube.models.Item;
 
 /**
  * Created by kimbe on 21/03/2018.

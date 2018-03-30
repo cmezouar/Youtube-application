@@ -1,5 +1,5 @@
 
-package com.example.kimbe.youtubekim.models;
+package com.example.kimbe.youtube.models;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

@@ -1,21 +1,14 @@
-package com.example.kimbe.youtubekim.viewholders;
+package com.example.kimbe.youtube.viewholders;
 
-import android.content.Intent;
-import android.provider.Settings;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.kimbe.youtubekim.R;
-import com.example.kimbe.youtubekim.activities.MainActivity;
-import com.example.kimbe.youtubekim.activities.SecondActivity;
-import com.example.kimbe.youtubekim.adapters.search;
-import com.example.kimbe.youtubekim.models.Item;
+import com.example.kimbe.youtube.R;
+import com.example.kimbe.youtube.adapters.search;
+import com.example.kimbe.youtube.models.Item;
 import com.squareup.picasso.Picasso;
-
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by kimbe on 10/03/2018.

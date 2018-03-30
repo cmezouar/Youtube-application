@@ -1,18 +1,15 @@
-package com.example.kimbe.youtubekim.activities;
+package com.example.kimbe.youtube.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.kimbe.youtubekim.R;
+import com.example.kimbe.youtube.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
-
-import org.w3c.dom.Text;
 
 /**
  * Created by kimbe on 21/03/2018.

@@ -1,10 +1,10 @@
 
-package com.example.kimbe.youtubekim.models;
+package com.example.kimbe.youtube.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Medium {
+public class Default {
 
     @SerializedName("url")
     @Expose

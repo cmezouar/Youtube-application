@@ -1,6 +1,6 @@
-package com.example.kimbe.youtubekim.client;
+package com.example.kimbe.youtube.client;
 
-import com.example.kimbe.youtubekim.models.Results;
+import com.example.kimbe.youtube.models.Results;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

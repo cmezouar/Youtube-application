@@ -1,28 +1,21 @@
-package com.example.kimbe.youtubekim.activities;
+package com.example.kimbe.youtube.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.kimbe.youtubekim.R;
-import com.example.kimbe.youtubekim.adapters.VideosRecyclerAdapter;
-import com.example.kimbe.youtubekim.adapters.search;
-import com.example.kimbe.youtubekim.client.YoutubeClient;
-import com.example.kimbe.youtubekim.models.Item;
-import com.example.kimbe.youtubekim.models.Results;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.kimbe.youtube.R;
+import com.example.kimbe.youtube.adapters.VideosRecyclerAdapter;
+import com.example.kimbe.youtube.adapters.search;
+import com.example.kimbe.youtube.client.YoutubeClient;
+import com.example.kimbe.youtube.models.Item;
+import com.example.kimbe.youtube.models.Results;
 
 import retrofit2.Call;
 import retrofit2.Callback;

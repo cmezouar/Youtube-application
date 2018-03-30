@@ -1,4 +1,4 @@
-package com.example.kimbe.youtubekim;
+package com.example.kimbe.youtube;
 
 import org.junit.Test;
 

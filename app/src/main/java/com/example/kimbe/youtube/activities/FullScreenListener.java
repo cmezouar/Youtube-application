@@ -1,4 +1,4 @@
-package com.example.kimbe.youtubekim.activities;
+package com.example.kimbe.youtube.activities;
 
 import com.google.android.youtube.player.YouTubePlayer;
 
